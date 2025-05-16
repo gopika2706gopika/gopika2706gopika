@@ -1,0 +1,31 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load the dataset
+df = pd.read_csv('creditcard.csv')
+
+# Display basic information
+print("Shape of dataset:", df.shape)
+print("\nData types and non-null counts:")
+print(df.info())
+
+# Display basic statistics
+print("\nStatistical summary:")
+print(df.describe())
+
+# Check for class distribution (assuming 'Class' is the target for fraud detection)
+print("\nClass distribution:")
+print(df['Class'].value_counts())
+
+# Plot class distribution
+sns.countplot(data=df, x='Class')
+plt.title('Distribution of Classes')
+plt.show()
+
+# Correlation heatmap
+plt.figure(figsize=(12, 8))
+corr = df.corr()
+sns.heatmap(corr, cmap='coolwarm', vmax=0.8)
+plt.title('Correlation Heatmap')
+plt.show()
