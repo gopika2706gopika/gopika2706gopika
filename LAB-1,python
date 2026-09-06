@@ -1,0 +1,208 @@
+#arithematic
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+print("add:",a+b)
+print("sub:",a-b)
+print("mul:",a*b)
+print("div:",a/b)
+print("modules:",a%b)
+print("expo:",a**b)
+print("floordiv:",a//b)
+
+
+    
+a=1234
+b=a%100
+print(b)
+
+a=123
+b=a//10
+print(b)
+
+a=int(input("enter the length:"))
+b=int(input("enter thr breadth:"))
+area= a*b
+perimetre=2*(a+b)
+print("area=",area)
+print("perimetre=",perimetre)
+
+
+#comparision
+
+a=int(input("enter a:",))
+b=int(input("enter b:",))
+print("a<b:",a<b)
+print("a>b:",a>b)
+print("a==b:",a==b)
+
+a=int(input("enter a:"))
+if a>=50:
+    print("grater than 50")
+else:
+    prin("eual to 50")
+
+#Logical Operators
+
+a=int(input("enter age :"))
+if a>18:
+    print("vote")
+else:
+    print("cant vote")
+
+
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+if a>100==0 or b>100==0:
+    print("successfull")
+
+
+
+u=str(input("enter username:"))
+p=int(input("enter password:"))
+if u=="gopika" and p==12345:
+    print("login")
+else:
+    print("invalid")
+    
+
+
+# Assignment Operators
+
+a=100
+a+=5
+a-=8
+a*=3
+a/=4
+print(a)
+
+#membership operator
+a=["gopi","abi","ran","mathu"]
+print("abi" in a)
+print("sowmi" not in a)
+
+fruits=["apple","banana","orange"]
+print("apple" in fruits)
+print("mango" not in fruits)
+
+
+text = "Hello World"
+ch = "W"
+
+if ch in text:
+    print("Character is present")
+else:
+    print("Character is not present")
+
+
+
+s="gopika"
+h="o"
+if h in s:
+    print("yes")
+else:
+    print("no")
+
+#identity operator
+a=[1,2]
+b=a
+c=[1.2]
+print(a is b)
+print(a is c)
+print(a is not c)
+
+ #Bitwise operator   
+    
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+print("a&b:",a&b)
+print("a|b:",a|b)
+print("a^b:",a^b)
+
+
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+print("~a:",~a)
+print("~b:",~b)
+
+
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+print("a&b:",a&b)
+print("a|b:",a|b)
+
+
+#if-else tasks
+
+#task 1
+
+a=int(input("enter a:"))
+if a%2==0:
+    print("even")
+else:
+    print("odd")
+
+
+    
+#task 2
+
+a=int(input("enter a:"))
+if a>0:
+      print("positive")
+elif a<0:
+    print("negative")
+else:
+    print("zero")
+
+
+#task 3
+
+a=int(input("enter a:"))
+if a>18:
+    print("vote")
+else:
+    print("not")
+
+#task 4
+
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+if a>b:
+    print("a is bigger")
+elif b>a:
+    print("b is bigger")
+else:
+    print(" both are equal")
+    
+#task 5
+
+a=int(input("enter a:"))
+if a>=50:
+    print("pass")
+else:
+    print("fail")
+
+#task 6
+
+a=int(input("enter a:"))
+if a%5==0:
+    print("a is divisible by 5")
+else:
+    print("a is not divisible by 5")
+#task 7
+
+a=int(input("enter a:"))
+b=a%10
+print(b)
+if b%2==0:
+    print("even")
+else:
+    print("odd")
+
+#task 8
+
+u=str(input("enter username:"))
+p=int(input("enter password:"))
+if u=="Gopika" and p==12345:
+    print("login successful")
+else:
+    print("login unsuccessful")
